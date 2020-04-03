@@ -1,3 +1,182 @@
 .mx_BaseAvatar_image {
   border-radius: 5px;
 }
+
+@media only screen and (max-width: 600px) {
+  .mx_RoomView_timeline_rr_enabled .mx_EventTile_line, .mx_RoomView_timeline_rr_enabled .mx_EventTile_reply {
+    margin-right: 0;
+    width: 100%;
+    padding-left: 0;
+    border: 6px solid #fff;
+  }
+  .mx_RoomView_timeline_rr_enabled .mx_EventTile_line, .mx_RoomView_timeline_rr_enabled .mx_EventTile_reply {
+    margin-right: 0;
+    width: 100%;
+    padding-left: 0;
+    border: 0;
+  }
+  .mx_EventTile:hover.mx_EventTile_unverified .mx_EventTile_line {
+    border-left: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+  }
+  .mx_EventTile:hover.mx_EventTile_verified .mx_EventTile_line {
+    border-left: 0;
+  }
+  .mx_EventTile:hover.mx_EventTile_unknown .mx_EventTile_line, .mx_EventTile:hover.mx_EventTile_unverified .mx_EventTile_line, .mx_EventTile:hover.mx_EventTile_verified .mx_EventTile_line {
+    padding-left: 0;
+    overflow: hidden;
+  }
+  .mx_ScrollPanel .mx_RoomView_MessageList {
+    padding-left: 27px;
+    padding-right: 0;
+    overflow: hidden;
+  }
+  .mx_MatrixChat>.mx_ResizeHandle.mx_ResizeHandle_horizontal {
+    margin: 0;
+    padding: 0;
+  }
+  .mx_EventTile_content {
+    padding-right: 10px;
+    padding-left: 46px;
+    display: inline-block;
+    max-width: 100%;
+    position: relative;
+  }
+  .mx_LinkPreviewWidget_image {
+    display: none;
+  }
+  .mx_EventTile .mx_SenderProfile {
+    padding-left: 45px;
+    line-height: 33px;
+  }
+  .mx_MatrixChat_useCompactLayout .mx_EventTile {
+    padding-top: 0;
+  }
+  .mx_RoomView_MessageList li {
+    clear: both;
+    margin-bottom: 10px;
+    display: block;
+  }
+  .mx_MImageBody {
+    display: block;
+    margin-right: 0;
+  }
+  .mx_MImageBody_thumbnail_container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  mx_EventTile .mx_SenderProfile {
+    line-height: 33px;
+  }
+  .mx_SenderProfile_name {
+    font-weight: 800;
+    font-size: 1.2em;
+  }
+  .mx_RoomTile_nameContainer {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-flex: 1;
+    position: absolute;
+    min-width: 0;
+  }
+  .collapsed .mx_RoomTile_badge, .mx_RoomTile_highlight .mx_RoomTile_badge {
+    margin-top: -8px;
+    position: fixed;    -webkit-border-radius: 16px;
+    border-radius: 16px;
+    z-index: 3;
+    border: .18em solid #f2f5f8;
+    right: initial;
+    top: initial;
+  }
+  .mx_RoomTile_dm {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: -5px;
+    top: 15px;
+    z-index: 2;
+  }
+  .mx_TopLeftMenuButton .mx_BaseAvatar {
+    margin: 0 7px;
+    display: none;
+  }
+  div#stickersButton {
+    display: none;
+  }
+  .mx_RoomHeader_avatar {
+    z-index: 999999;
+  }
+  .mx_MessageActionBar {
+    top: 1px;
+    overflow: hidden;
+  }
+  .mx_EventTile_msgOption {
+    height: 0;
+  }
+  .mx_EventTile_content .markdown-body pre {
+    width: 84%;
+  }
+  .mx_EventTile_content {
+    margin-right: 0;
+  }
+  .mx_MImageBody_thumbnail {
+    border-radius: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .mx_MatrixChat_useCompactLayout .mx_EventTile_readAvatars {
+    top: 22px;
+  }
+  video.mx_MVideoBody {
+    margin: auto;
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .mx_UserOnlineDot {    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 2px solid #03b381;
+    height: 32px;
+    width: 32px;
+    display: inline-block;
+    background-color: rgba(255,255,255, 0);
+  }
+  .mx_LeftPanel_container.collapsed {
+    max-width: 15px;
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    z-index: 99;
+    height: 100%;
+  }
+
+  .mx_LeftPanel_container.collapsed:hover {
+    min-width: 50px;
+    max-width: 50px;
+  }
+  .mx_TextualEvent, .mx_WhoIsTypingTile_label {
+    margin-left: 46px;
+  }
+  .mx_MatrixChat_useCompactLayout .mx_EventTile.mx_EventTile_info .mx_EventTile_avatar {
+    display: none;
+  }
+  .mx_EventTile_line, .mx_EventTile_reply {
+    padding-left: 0;
+  }
+  blockquote.mx_ReplyThread {
+    margin-left: 46px;
+  }
+  .mx_ReplyThread .mx_BaseAvatar_initial {
+    font-size: 13.5px !important;
+    width: 21px !important;
+    line-height: 22px !important;
+  }
+  .mx_ReplyThread .mx_BaseAvatar_image {
+    height: 20px;
+    width: 20px;
+  }
+}
